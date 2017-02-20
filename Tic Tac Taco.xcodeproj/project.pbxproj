@@ -14,6 +14,9 @@
 		BC3725621DAA712500ECD9E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3725601DAA712500ECD9E8 /* LaunchScreen.storyboard */; };
 		BC37256D1DAA712500ECD9E8 /* Tic_Tac_TacoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37256C1DAA712500ECD9E8 /* Tic_Tac_TacoTests.swift */; };
 		BC3725781DAA712500ECD9E8 /* Tic_Tac_TacoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3725771DAA712500ECD9E8 /* Tic_Tac_TacoUITests.swift */; };
+		BC3725881DAA729500ECD9E8 /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3725851DAA729500ECD9E8 /* board.png */; };
+		BC3725891DAA729500ECD9E8 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3725861DAA729500ECD9E8 /* cross.png */; };
+		BC37258A1DAA729500ECD9E8 /* nought.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3725871DAA729500ECD9E8 /* nought.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		BC3725731DAA712500ECD9E8 /* Tic Tac TacoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tic Tac TacoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC3725771DAA712500ECD9E8 /* Tic_Tac_TacoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tic_Tac_TacoUITests.swift; sourceTree = "<group>"; };
 		BC3725791DAA712500ECD9E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC3725851DAA729500ECD9E8 /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board.png; sourceTree = "<group>"; };
+		BC3725861DAA729500ECD9E8 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		BC3725871DAA729500ECD9E8 /* nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nought.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,9 @@
 				BC37256B1DAA712500ECD9E8 /* Tic Tac TacoTests */,
 				BC3725761DAA712500ECD9E8 /* Tic Tac TacoUITests */,
 				BC3725551DAA712500ECD9E8 /* Products */,
+				BC3725851DAA729500ECD9E8 /* board.png */,
+				BC3725861DAA729500ECD9E8 /* cross.png */,
+				BC3725871DAA729500ECD9E8 /* nought.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,11 +197,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Ankita Satpathy";
 				TargetAttributes = {
 					BC3725531DAA712400ECD9E8 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = E3M6HYAQS9;
 						ProvisioningStyle = Automatic;
 					};
 					BC3725671DAA712500ECD9E8 = {
@@ -232,6 +242,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC3725891DAA729500ECD9E8 /* cross.png in Resources */,
+				BC3725881DAA729500ECD9E8 /* board.png in Resources */,
+				BC37258A1DAA729500ECD9E8 /* nought.png in Resources */,
 				BC3725621DAA712500ECD9E8 /* LaunchScreen.storyboard in Resources */,
 				BC37255F1DAA712500ECD9E8 /* Assets.xcassets in Resources */,
 				BC37255D1DAA712500ECD9E8 /* Main.storyboard in Resources */,
@@ -333,10 +346,12 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ankitasatpathy94@gmail.com (6W356AKQ5C)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ankitasatpathy94@gmail.com (6W356AKQ5C)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -355,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -383,10 +398,12 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ankitasatpathy94@gmail.com (6W356AKQ5C)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -399,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -412,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E3M6HYAQS9;
 				INFOPLIST_FILE = "Tic Tac Taco/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ankita.Tic-Tac-Taco";
@@ -424,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E3M6HYAQS9;
 				INFOPLIST_FILE = "Tic Tac Taco/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ankita.Tic-Tac-Taco";
@@ -505,6 +524,7 @@
 				BC37257E1DAA712500ECD9E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC37257F1DAA712500ECD9E8 /* Build configuration list for PBXNativeTarget "Tic Tac TacoTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +533,7 @@
 				BC3725811DAA712500ECD9E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC3725821DAA712500ECD9E8 /* Build configuration list for PBXNativeTarget "Tic Tac TacoUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +542,7 @@
 				BC3725841DAA712500ECD9E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
